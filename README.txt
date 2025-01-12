@@ -28,6 +28,8 @@ Both regression and classification tasks utilize data manipulation using pandas 
 
 We used different models in regression and classification. While we trained a lot of models, these options gave us the best results according to our precision, recall, accuracies and we finalized on these.
 
+The outputs might not be the perfect wanted format, small changes might have to be implemented (For example, the regression task model prints a jsonl file. Just change it to json with renaming it)
+
 Also, some of the classification data predicted finally has some changes from the model. These were found via observation, where if an account has a government association (mainly, in our case, since the accounts belonged to Turkish people, they had city council accounts, any account usernames that contained "belediye" or "bld" were converted to their correct categories, as all of them should be in the same category, and the model had a hard time fitting them into the correct place, as they are a bit far from the categories given. This is like a manual intervention and many are possible, since these were a lot more and effected our models accuracy, we decided to use this approach to find the solution to the identified problem.
 
 Please contact us if you have further questions.
